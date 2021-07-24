@@ -1,0 +1,19 @@
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\prueba net 5.exe
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\prueba net 5.deps.json
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\prueba net 5.runtimeconfig.json
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\prueba net 5.runtimeconfig.dev.json
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\prueba net 5.dll
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\ref\prueba net 5.dll
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\bin\Debug\net5.0-windows\prueba net 5.pdb
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.csproj.AssemblyReference.cache
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba_net_5.Form1.resources
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba_net_5.FrmPrincipal.resources
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.csproj.GenerateResource.cache
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.AssemblyInfoInputs.cache
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.AssemblyInfo.cs
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.dll
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\ref\prueba net 5.dll
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.pdb
+C:\Users\Alvaro Reartes\Desktop\NET 5 FINAL\prueba net 5\obj\Debug\net5.0-windows\prueba net 5.genruntimeconfig.cache
