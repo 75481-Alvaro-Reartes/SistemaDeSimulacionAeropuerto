@@ -1,0 +1,77 @@
+Antes de cada fila me fijo en todas las columnas que son de fin de evento cual es la menor
+
+
+------Cuando se da el Evento Llegada Pasajero:------------
+Camino Feliz
+
+1) Se pone el nombre del evento Llegada pasajero (i) dependera 
+del orden de llegada Se fija en la cola maquina RX Si hay alguna libre
+2) Elije la primera maquina que este libre y se guarda su id
+3)Se calucla RND Fin control RX, se le suma al reloj actual y se pone ese valor Fin de control en el id de la maquina que se eligio
+4)Se crea una columna Pasajero con estado SACRX con el id de la maquina que lo tiene
+5)Se agrega el tiempo de ingreso al sistema
+6) Lo demas se mantiene igual
+
+Camino Alterno
+1)Se pone el nombre del evento con la llegad de nuevo pasajero con el valor de i que varia
+2)Todos las mauinqas RX estan ocupadas, se suma 1 en la cola
+3)Los valores de fin de Çcontrol RX se mantienen de la anterior
+4) El nuevo pasajero se crea en estado EACRX y se agenda hora de ingreso
+
+
+
+
+
+
+-----------Evento FinControl RX---------------
+Camino Feliz
+1)Nombre de evento sera Fin Control RX (i) dependera de cual fue y al lado Pasajero(id) que termino
+ese valor lo saco del estado pasajero que va tner entre parentesis que maquina lo atendia
+2)Llegada pasajero se queda igual y se borran rnd y entre tiempo
+3) Se fija en la cola de maquina si es mayor a cero y si lo es, por ende calculo RND y nuevo
+Fin de inspeccion RX en esa columna
+		Si la cola es cero, se pone libre la maquina que genera el eevento
+4) Bajo la cola en 1 si es mayor a cero
+5) Calculo random de montecarlo si es menor a 0.1 va a inspeccion sino se borra y se suma el acumulador
+de timepo en sistema (Reloj - H.I.S)
+) Si se borra por no pasar el objetivo se debe buscar la persona que este esperando control Rx siguiente  
+6) si pasa a inspeccion Se fija si hay inspectores disponibles
+		Si hay se ocupa un inspector y se calcula el valor de Normal Entre timepo y se suma
+		al reloj, y se asigna al inspector que tomo esa persona
+	Si no hay inspectores libre, se suma la cola y se pone al pasajero a la espera de una atencion
+	De un inspector se debe guardar en un  acoluman nueva H.I.E.I(Hora de inicio de espera en inspeccion)
+	Q determinara cual persona pasa es la primera en la cola, el que sea mas bajo el valor
+	Entre personas en estado Esperando esa sera la que pase a inspeccion
+
+
+
+
+-------------------Evento Fin Inspeccion -------------------------------
+1) Ponogo el nombre del evento (i) con el pasajero x que lo detono
+2) Me fijo en la cola si hay pasajeros, si los hay debo traer otro valor normal y ponerlo
+en la posicion de inspector que se libero y ademas bajar la cola en 1
+3) Siempre se suma el acumulador de pasajeros que slaen del sistema y acumulo el tiempo de espera HIS
+
+4)Si hay cola = 0 se debe opner libre al inspector que estaba con ese pasajero, sumar metricas.
+se copia todo lo demas y sale del sistema el pasajero
+
+
+
+----------------------Politica sin evento inspeccion ni inspectores ------------------------
+Cambia evento fin control:
+Camino Feliz
+1)Nombre de evento sera Fin Control RX (i) dependera de cual fue y al lado Pasajero(id) que termino
+ese valor lo saco del estado pasajero que va tner entre parentesis que maquina lo atendia
+2)Llegada pasajero se queda igual y se borran rnd y entre tiempo
+3) Se fija en la cola de maquina si es mayor a cero y si lo es, por ende calculo RND y nuevo
+Fin de inspeccion RX en esa columna
+		Si la cola es cero, se pone libre la maquina que genera el eevento
+4) Bajo la cola en 1 si es mayor a cero
+5) Se debe borrar la persona que ejecuto ese fin de inspeccion y sumar metricas
+
+
+----------------------Politicas si agrego una maquina mas o si pongo un inspector mas-------
+
+Implica una columna mas de fin de Inepccion RX o Fin Inspeccion
+Implica agregar una columa mas por el inspector o la maquina con su estado
+

@@ -1,0 +1,30 @@
+Eventos
+----------------------------
+@@@@@@   TIEMPO EN SEGUNDOS   @@@@@@@@@@
+(lambda = 400/3600  --> 1/9  entonces la media es 9'')
+(lambda = 150/3600  --> 1/24  entonces la media es 24'')
+
+-LLegada_Pasajero 	Exp Neg media(9'')
+-Fin_Control_Ray_X(i) 	Exp Neg media(24'')
+	i = 1,2,3
+-Fin_Inspeccion(i)	Distr Normal (media 240'' - desv est 120'') 
+
+Objetos
+---------------------------
+**ESTATICOS**
+-Maquina(n) 	[Estado ( Libre - Irradiando ) - Cola Pasaj ]
+n = 1,2,3
+-Inspectores(m) [Estado ( Libre - Inspeccionado) - Cola Pasaj dudoso]
+m = 1,2,3
+
+**TEMPORALES**
+-Pasajeros	[Estado ( ERX - SARX - EI - SAI ) - H.I.S]
+
+Stats
+------------------------------
+-Acumulador pasajeros Salen del sistema A
+-Acum tiempo pasjeros en el sistema B
+
+(((Con estos valores se divide A/B))))
+
+
